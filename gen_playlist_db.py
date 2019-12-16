@@ -6,7 +6,7 @@
 #   文件名称：gen_playlist_db.py
 #   创 建 者：肖飞
 #   创建日期：2019年12月12日 星期四 11时38分14秒
-#   修改日期：2019年12月16日 星期一 13时12分03秒
+#   修改日期：2019年12月16日 星期一 16时24分32秒
 #   描    述：
 #
 #================================================================
@@ -93,7 +93,8 @@ def parse_filelist(filelist):
         ts, file_path = m.groups()
         file_path = file_path.replace("'", "\\'")
         #print(file_path)
-        file_pic = '%s%s%s' %('/thumbnails', file_path, '.jpg')
+        #file_pic = '%s%s%s' %('/thumbnails', file_path, '.jpg')
+        file_pic = '%s%s%s' %('/gifs', file_path, '.gif')
         #print(file_pic)
         file_name = os.path.splitext(os.path.basename(file_path))[0]
         #print(file_name)
