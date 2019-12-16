@@ -6,7 +6,7 @@
 #   文件名称：gen_playlist_db.py
 #   创 建 者：肖飞
 #   创建日期：2019年12月12日 星期四 11时38分14秒
-#   修改日期：2019年12月12日 星期四 14时38分36秒
+#   修改日期：2019年12月16日 星期一 12时27分47秒
 #   描    述：
 #
 #================================================================
@@ -77,7 +77,7 @@ def test():
     print('%s' %(content))
 
 def parse_filelist(filelist):
-    sea_data_sample = "(pattern_index, 6, 'pattern_name', 0, 'pattern_pic', 'pattern_pic', 'pattern_pic', 0, 0, 0, 0, 0, 0, 0, 0, '内详', '', 2019, '', 1576075151, 0, '', '', '_', 0, 0, '内详', 'pattern_pinyin', '', 0, 0, '', '', '', '', 0, 0, 0, '', '', 47, 47, 47, 1576044305, 1576044305, 1576044305, '', '', '', '', '')"
+    sea_data_sample = "(pattern_index, 6, 'pattern_name', 0, 'pattern_pic', 'pattern_pic', 'pattern_pic', 0, 0, 0, 0, 0, 0, 0, 0, '内详', '', 2019, '', pattern_ts, 0, '', '', '_', 0, 0, '内详', 'pattern_pinyin', '', 0, 0, '', '', '', '', 0, 0, 0, '', '', 47, 47, 47, pattern_ts, pattern_ts, pattern_ts, '', '', '', '', '')"
     sea_playdata_sample = "(pattern_index, 6, 'CKplayer播放$$第1集$pattern_path$dp', '')"
     sea_content_sample = "(pattern_index, 6, '')"
 
@@ -88,7 +88,10 @@ def parse_filelist(filelist):
 
     item_index = 1
     for i in open(filelist):
-        file_path = i.strip()
+        p = re.compile('([0-9]+),(.*)')
+        m = re.match(p, i.strip())
+        ts, file_path = m.groups()
+        file_path = file_path.replace("'", "\\'")
         #print(file_path)
         file_pic = file_path + '.jpg'
         #print(file_pic)
@@ -101,6 +104,7 @@ def parse_filelist(filelist):
         sea_data_item = sea_data_item.replace('pattern_pic', file_pic)
         sea_data_item = sea_data_item.replace('pattern_pinyin', file_pinyin)
         sea_data_item = sea_data_item.replace('pattern_index', str(item_index))
+        sea_data_item = sea_data_item.replace('pattern_ts', ts)
         #print(sea_data_item)
         list_sea_data.append(sea_data_item)
 
@@ -115,31 +119,40 @@ def parse_filelist(filelist):
 
         item_index += 1
 
-    f_data = open('data', 'w')
+    sea_data = ''
     for i, item in enumerate(list_sea_data):
         if i == len(list_sea_data) - 1:
-            f_data.write('%s;\n' %(item))
+            sea_data += '%s;\n' %(item)
         else:
-            f_data.write('%s,\n' %(item))
-    f_data.close()
+            sea_data += '%s,\n' %(item)
 
-    f_playdata = open('playdata', 'w')
+    sea_playdata = ''
     for i, item in enumerate(list_sea_playdata):
         if i == len(list_sea_playdata) - 1:
-            f_playdata.write('%s;\n' %(item))
+            sea_playdata += '%s;\n' %(item)
         else:
-            f_playdata.write('%s,\n' %(item))
-    f_playdata.close()
+            sea_playdata += '%s,\n' %(item)
 
-    f_content = open('content', 'w')
+    sea_content = ''
     for i, item in enumerate(list_sea_content):
         if i == len(list_sea_content) - 1:
-            f_content.write('%s;\n' %(item))
+            sea_content += '%s;\n' %(item)
         else:
-            f_content.write('%s,\n' %(item))
-    f_content.close()
+            sea_content += '%s,\n' %(item)
 
-    datetime_to_timestamps(2019, 12, 11, 22, 39, 11)
+    f_pattern = open('pattern.sql')
+    pattrn_conten = f_pattern.read()
+    f_pattern.close()
+
+    pattrn_conten = pattrn_conten.replace('sea_data_items_pattern', sea_data)
+    pattrn_conten = pattrn_conten.replace('sea_playdata_items_pattern', sea_playdata)
+    pattrn_conten = pattrn_conten.replace('sea_content_items_pattern', sea_content)
+
+    f_seacms = open('seacms.sql', 'w')
+    f_seacms.write(pattrn_conten)
+    f_seacms.close()
+
+    #datetime_to_timestamps(2019, 12, 11, 22, 39, 11)
 
 def main(argv):
     options = optparse.OptionParser()
