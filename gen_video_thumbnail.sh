@@ -15,7 +15,12 @@ function main() {
 		if [ ! -f "$line" ]; then
 			continue;
 		fi
-		ffmpeg -nostdin -ss "0:00:10" -i "$line" -an -vframes 1 "$line.jpg";
+
+		if [ -f "$line.jpg" ]; then
+			continue;
+		fi
+
+		ffmpeg -nostdin -ss "0:00:50" -i "$line" -an -vframes 1 "$line.jpg";
 	done
 }
 
