@@ -6,7 +6,7 @@
 #   文件名称：gen_playlist_db.py
 #   创 建 者：肖飞
 #   创建日期：2019年12月12日 星期四 11时38分14秒
-#   修改日期：2019年12月16日 星期一 16时24分32秒
+#   修改日期：2019年12月17日 星期二 08时46分56秒
 #   描    述：
 #
 #================================================================
@@ -77,7 +77,7 @@ def test():
     print('%s' %(content))
 
 def parse_filelist(filelist):
-    sea_data_sample = "(pattern_index, 6, 'pattern_name', 0, 'pattern_pic', 'pattern_pic', 'pattern_pic', 0, 0, 0, 0, 0, 0, 0, 0, '内详', '', 2019, '', pattern_ts, 0, '', '', '_', 0, 0, '内详', 'pattern_pinyin', '', 0, 0, '', '', '', '', 0, 0, 0, '', '', 47, 47, 47, pattern_ts, pattern_ts, pattern_ts, '', '', '', '', '')"
+    sea_data_sample = "(pattern_index, 6, 'pattern_name', 0, 'pattern_gif', 'pattern_pic', 'pattern_pic', 0, 0, 0, 0, 0, 0, 0, 0, '内详', '', 2019, '', pattern_ts, 0, '', '', '_', 0, 0, '内详', 'pattern_pinyin', '', 0, 0, '', '', '', '', 0, 0, 0, '', '', 47, 47, 47, pattern_ts, pattern_ts, pattern_ts, '', '', '', '', '')"
     sea_playdata_sample = "(pattern_index, 6, 'CKplayer播放$$第1集$pattern_path$dp', '')"
     sea_content_sample = "(pattern_index, 6, '')"
 
@@ -93,15 +93,17 @@ def parse_filelist(filelist):
         ts, file_path = m.groups()
         file_path = file_path.replace("'", "\\'")
         #print(file_path)
-        #file_pic = '%s%s%s' %('/thumbnails', file_path, '.jpg')
-        file_pic = '%s%s%s' %('/gifs', file_path, '.gif')
+        file_pic = '%s%s%s' %('/thumbnails', file_path, '.jpg')
         #print(file_pic)
+        file_gif = '%s%s%s' %('/gifs', file_path, '.gif')
+        #print(file_gif)
         file_name = os.path.splitext(os.path.basename(file_path))[0]
         #print(file_name)
         file_pinyin = py.convert_content(file_name).encode('utf-8')
         #print(file_pinyin)
 
         sea_data_item = sea_data_sample.replace('pattern_name', file_name)
+        sea_data_item = sea_data_item.replace('pattern_gif', file_gif)
         sea_data_item = sea_data_item.replace('pattern_pic', file_pic)
         sea_data_item = sea_data_item.replace('pattern_pinyin', file_pinyin)
         sea_data_item = sea_data_item.replace('pattern_index', str(item_index))
