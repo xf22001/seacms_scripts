@@ -775,22 +775,22 @@ CREATE TABLE `sea_type` (
 --
 
 INSERT INTO `sea_type` (`tid`, `upid`, `tname`, `tenname`, `torder`, `templist`, `templist_1`, `templist_2`, `title`, `keyword`, `description`, `ishidden`, `unionid`, `tptype`) VALUES
-(1, 0, '电影', 'dy', 1, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '31_1', 0),
-(2, 0, '电视剧', 'tv', 2, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '', 0),
-(3, 0, '综艺', 'zy', 3, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '', 0),
-(4, 0, '动漫', 'dm', 4, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '', 0),
-(5, 1, '动作片', 'dongzuo', 5, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '', 0),
-(6, 1, '爱情片', 'aiqing', 6, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '', 0),
-(7, 1, '科幻片', 'kehuan', 7, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '', 0),
-(8, 1, '恐怖片', 'kongbu', 8, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '', 0),
-(9, 1, '战争片', 'zhanzheng', 9, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '', 0),
-(10, 1, '喜剧片', 'xiju', 10, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '', 0),
-(11, 1, '纪录片', 'jilu', 11, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '', 0),
-(12, 1, '剧情片', 'juqing', 12, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '', 0),
-(13, 2, '大陆剧', 'dalu', 13, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '', 0),
-(14, 2, '港台剧', 'tangtai', 14, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '', 0),
-(15, 2, '欧美剧', 'oumei', 15, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '', 0),
-(16, 2, '日韩剧', 'rihan', 16, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '', 0),
+(1, 0, '电影', 'dy', 1, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '31_1,33uuyun_1,156zy_1,33uuck_1,zuikzy_1,zuikyun_1,zuikck_1,8_1', 0),
+(2, 0, '电视剧', 'tv', 2, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_2,156zy_2,33uuck_2,zuikzy_2,zuikyun_2,zuikck_2,8_2', 0),
+(3, 0, '综艺', 'zy', 3, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '156zy_3,33uuck_3,zuikzy_3,zuikzy_19,zuikzy_22,zuikyun_3,zuikyun_19,zuikyun_22,zuikck_3,zuikck_19,zuikck_22,8_3,8_30,8_27,8_32,8_31', 0),
+(4, 0, '动漫', 'dm', 4, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_4,156zy_4,33uuck_4,zuikzy_4,zuikyun_4,zuikck_4,8_4,8_20,8_36,8_37,8_35,8_34,8_33', 0),
+(5, 1, '动作片', 'dongzuo', 5, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_5,156zy_5,33uuck_5,zuikzy_5,zuikyun_5,zuikck_5,8_5', 0),
+(6, 1, '爱情片', 'aiqing', 6, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_7,33uuyun_16,156zy_7,33uuck_7,zuikzy_7,zuikyun_7,zuikck_7,8_7', 0),
+(7, 1, '科幻片', 'kehuan', 7, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_8,33uuyun_26,156zy_8,156zy_26,33uuck_8,33uuck_26,zuikzy_8,zuikzy_24,zuikyun_8,zuikyun_24,zuikck_8,zuikck_24,8_8', 0),
+(8, 1, '恐怖片', 'kongbu', 8, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_9,33uuyun_10,156zy_9,33uuck_9,zuikzy_9,zuikyun_9,zuikck_9,8_9', 0),
+(9, 1, '战争片', 'zhanzheng', 9, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_11,156zy_11,33uuck_11,zuikzy_11,zuikyun_11,zuikck_11,8_11', 0),
+(10, 1, '喜剧片', 'xiju', 10, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_6,156zy_6,33uuck_6,zuikzy_6,zuikyun_6,zuikck_6,8_6', 0),
+(11, 1, '纪录片', 'jilu', 11, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_25,156zy_25,33uuck_25,zuikzy_23,zuikyun_23,zuikck_23,8_22', 0),
+(12, 1, '剧情片', 'juqing', 12, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '156zy_10,156zy_16,33uuck_10,33uuck_16,zuikzy_10,zuikzy_16,zuikyun_10,zuikyun_16,zuikck_10,zuikck_16,8_10,8_29,8_21,8_26', 0),
+(13, 2, '大陆剧', 'dalu', 13, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_12,156zy_12,33uuck_12,zuikzy_12,zuikyun_12,zuikck_12,8_12', 0),
+(14, 2, '港台剧', 'tangtai', 14, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_13,33uuyun_13,33uuyun_21,156zy_13,156zy_21,33uuck_13,33uuck_21,zuikzy_13,zuikzy_18,zuikyun_13,zuikyun_18,zuikck_13,zuikck_18,8_28,8_16,8_13', 0),
+(15, 2, '欧美剧', 'oumei', 15, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_15,156zy_15,33uuck_15,zuikzy_15,zuikyun_15,8_23,8_15', 0),
+(16, 2, '日韩剧', 'rihan', 16, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_14,33uuyun_20,156zy_14,156zy_20,33uuck_14,33uuck_20,zuikzy_14,zuikzy_17,zuikyun_14,zuikyun_17,zuikck_14,zuikck_15,zuikck_17,8_14,8_17', 0),
 (17, 0, '国内', 'guonei', 17, 'newspage.html', 'news.html', 'play.html', '', '', '', 0, '', 1),
 (18, 0, '国际', 'guoji', 18, 'newspage.html', 'news.html', 'play.html', '', '', '', 0, '', 1),
 (19, 0, '社会', 'shehui', 19, 'newspage.html', 'news.html', 'play.html', '', '', '', 0, '', 1),
@@ -815,6 +815,14 @@ CREATE TABLE `sea_zyk` (
   `zapi` varchar(255) NOT NULL,
   `zinfo` varchar(255) NOT NULL DEFAULT '暂无'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- 转存表中的数据 `sea_zyk`
+--
+
+INSERT INTO `sea_zyk` (`zid`, `zname`, `zapi`, `zinfo`) VALUES
+(7, '哈酷资源', 'http://api.666zy.com/inc/seacmsapi.php', '<a target=\"_blank\" href=\"https://www.666zy.com/help/seacms.html\"><font color=\"red\">【采集帮助/播放器集成】</font></a>'),
+(8, '哈酷资源M3U8', 'http://api.666zy.com/inc/seam3u8.php', '<a target=\"_blank\" href=\"https://www.666zy.com/help/seacms.html\"><font color=\"red\">【采集帮助/播放器集成】</font></a>');
 
 --
 -- 转储表的索引

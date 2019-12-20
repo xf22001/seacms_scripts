@@ -6,7 +6,7 @@
 #   文件名称：gen_playlist_db.py
 #   创 建 者：肖飞
 #   创建日期：2019年12月12日 星期四 11时38分14秒
-#   修改日期：2019年12月17日 星期二 08时46分56秒
+#   修改日期：2019年12月20日 星期五 11时02分32秒
 #   描    述：
 #
 #================================================================
@@ -77,9 +77,9 @@ def test():
     print('%s' %(content))
 
 def parse_filelist(filelist):
-    sea_data_sample = "(pattern_index, 6, 'pattern_name', 0, 'pattern_gif', 'pattern_pic', 'pattern_pic', 0, 0, 0, 0, 0, 0, 0, 0, '内详', '', 2019, '', pattern_ts, 0, '', '', '_', 0, 0, '内详', 'pattern_pinyin', '', 0, 0, '', '', '', '', 0, 0, 0, '', '', 47, 47, 47, pattern_ts, pattern_ts, pattern_ts, '', '', '', '', '')"
-    sea_playdata_sample = "(pattern_index, 6, 'CKplayer播放$$第1集$pattern_path$dp', '')"
-    sea_content_sample = "(pattern_index, 6, '')"
+    sea_data_sample = "(pattern_index, 12, 'pattern_name', 0, 'pattern_gif', 'pattern_pic', 'pattern_pic', 0, 0, 0, 0, 0, 0, 0, 0, '内详', '', 2019, '', pattern_ts, 0, '', '', '_', 0, 0, '内详', 'pattern_pinyin', '', 0, 0, '16', '剧情', '', '', 0, 0, 0, '', '', 47, 47, 47, pattern_ts, pattern_ts, pattern_ts, '', '', '', '', '')"
+    sea_playdata_sample = "(pattern_index, 12, 'Dplayer播放$$第1集$pattern_path$dp', '')"
+    sea_content_sample = "(pattern_index, 12, '')"
 
     py = pinyin()
     list_sea_data = []
