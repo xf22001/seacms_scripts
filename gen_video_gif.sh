@@ -6,11 +6,17 @@
 #   文件名称：gen_video_gif.sh
 #   创 建 者：肖飞
 #   创建日期：2019年12月16日 星期一 14时05分48秒
-#   修改日期：2019年12月16日 星期一 16时16分37秒
+#   修改日期：2019年12月20日 星期五 12时57分26秒
 #   描    述：
 #
 #================================================================
 function main() {
+	local frames="$1"
+
+	if [ -z "$frames" ];then
+		frames=15
+	fi
+
 	cat only_filelist | while read line; do
 		if [ ! -f "$line" ]; then
 			continue;
@@ -34,7 +40,7 @@ function main() {
 
 		index=0;
 
-		python gen_frame_pos_list.py "$duration" | while read start_pos;do
+		python gen_frame_pos_list.py "$duration" "$frames" | while read start_pos;do
 			ffmpeg -nostdin -ss "$start_pos" -i "$line" -vf "scale=iw/3:-1" -an -vframes 1 "$tn_path.$index.jpg";
 			#((index++));
 			let index=index+1;
@@ -43,7 +49,7 @@ function main() {
 		ffmpeg -r 2 -i "$tn_path.%d.jpg" "$tn_path";
 
 		index=0
-		python gen_frame_pos_list.py "$duration" | while read start_pos;do
+		python gen_frame_pos_list.py "$duration" "$frames" | while read start_pos;do
 			rm "$tn_path.$index.jpg";
 			((index++));
 		done
