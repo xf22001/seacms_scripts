@@ -775,22 +775,22 @@ CREATE TABLE `sea_type` (
 --
 
 INSERT INTO `sea_type` (`tid`, `upid`, `tname`, `tenname`, `torder`, `templist`, `templist_1`, `templist_2`, `title`, `keyword`, `description`, `ishidden`, `unionid`, `tptype`) VALUES
-(1, 0, '电影', 'dy', 1, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '31_1,33uuyun_1,156zy_1,33uuck_1,zuikzy_1,zuikyun_1,zuikck_1,8_1,10_1,11_1,12_1,7_1,13_1', 0),
-(2, 0, '电视剧', 'tv', 2, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_2,156zy_2,33uuck_2,zuikzy_2,zuikyun_2,zuikck_2,8_2,10_2,11_2,12_2,13_2', 0),
-(3, 0, '综艺', 'zy', 3, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '156zy_3,33uuck_3,zuikzy_3,zuikzy_19,zuikzy_22,zuikyun_3,zuikyun_19,zuikyun_22,zuikck_3,zuikck_19,zuikck_22,8_3,8_30,8_27,8_32,8_31,9_30,10_3,11_3,12_3,7_3,7_30,7_33,7_32,7_31,13_3', 0),
-(4, 0, '动漫', 'dm', 4, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_4,156zy_4,33uuck_4,zuikzy_4,zuikyun_4,zuikck_4,8_4,8_20,8_36,8_37,8_35,8_34,8_33,9_31,9_39,10_4,11_4,12_4,7_4,7_20,7_37,7_36,7_35,7_34,7_27,9_16,13_4', 0),
-(5, 1, '动作片', 'dongzuo', 5, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_5,156zy_5,33uuck_5,zuikzy_5,zuikyun_5,zuikck_5,8_5,9_32,10_5,11_5,12_5,7_5,13_5', 0),
-(6, 1, '爱情片', 'aiqing', 6, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_7,33uuyun_16,156zy_7,33uuck_7,zuikzy_7,zuikyun_7,zuikck_7,8_7,9_34,10_7,11_7,12_7,7_7,9_7,13_7', 0),
-(7, 1, '科幻片', 'kehuan', 7, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_8,33uuyun_26,156zy_8,156zy_26,33uuck_8,33uuck_26,zuikzy_8,zuikzy_24,zuikyun_8,zuikyun_24,zuikck_8,zuikck_24,8_8,9_35,10_8,10_26,11_8,11_15,11_26,12_8,12_26,7_8,9_8,13_24,13_8', 0),
-(8, 1, '恐怖片', 'kongbu', 8, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_9,33uuyun_10,156zy_9,33uuck_9,zuikzy_9,zuikyun_9,zuikck_9,8_9,9_36,10_9,11_9,12_9,7_9,9_9,13_9', 0),
-(9, 1, '战争片', 'zhanzheng', 9, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_11,156zy_11,33uuck_11,zuikzy_11,zuikyun_11,zuikck_11,8_11,9_38,10_11,11_11,12_11,7_11,9_11,13_11', 0),
-(10, 1, '喜剧片', 'xiju', 10, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_6,156zy_6,33uuck_6,zuikzy_6,zuikyun_6,zuikck_6,8_6,9_33,10_6,11_6,12_6,7_6,13_6', 0),
-(11, 1, '纪录片', 'jilu', 11, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_25,156zy_25,33uuck_25,zuikzy_23,zuikyun_23,zuikck_23,8_22,9_42,10_25,11_25,12_25,7_22,9_18,13_23', 0),
-(12, 1, '剧情片', 'juqing', 12, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '156zy_10,156zy_16,33uuck_10,33uuck_16,zuikzy_10,zuikzy_16,zuikyun_10,zuikyun_16,zuikck_10,zuikck_16,8_10,8_29,8_21,8_26,9_37,9_40,9_41,10_10,10_16,11_10,11_16,12_10,12_16,7_2,7_29,7_26,7_10,7_21,9_10,9_17,9_22,13_10,13_16,13_19,13_22', 0),
-(13, 2, '大陆剧', 'dalu', 13, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_12,156zy_12,33uuck_12,zuikzy_12,zuikyun_12,zuikck_12,8_12,9_1,10_12,11_12,11_21,12_12,7_12,9_12,13_12', 0),
-(14, 2, '港台剧', 'tangtai', 14, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_13,33uuyun_13,33uuyun_21,156zy_13,156zy_21,33uuck_13,33uuck_21,zuikzy_13,zuikzy_18,zuikyun_13,zuikyun_18,zuikck_13,zuikck_18,8_28,8_16,8_13,9_2,9_3,10_13,10_21,11_13,12_13,12_21,7_13,7_28,7_16,9_13,9_14,13_13,13_18', 0),
-(15, 2, '欧美剧', 'oumei', 15, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_15,156zy_15,33uuck_15,zuikzy_15,zuikyun_15,8_23,8_15,9_6,9_29,10_15,12_15,7_23,7_15,9_20,9_21,13_15,13_14', 0),
-(16, 2, '日韩剧', 'rihan', 16, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_14,33uuyun_20,156zy_14,156zy_20,33uuck_14,33uuck_20,zuikzy_14,zuikzy_17,zuikyun_14,zuikyun_17,zuikck_14,zuikck_15,zuikck_17,8_14,8_17,9_4,9_5,8_19,10_20,10_14,10_22,10_23,11_22,11_23,11_20,11_14,12_23,12_22,12_20,12_14,7_19,7_17,7_14,9_19,9_15,zuikzy_20,zuikyun_20,zuikck_20,13_20,13_17', 0),
+(1, 0, '电影', 'dy', 1, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '31_1,33uuyun_1,156zy_1,33uuck_1,zuikzy_1,zuikyun_1,zuikck_1,8_1,10_1,11_1,12_1,7_1,13_1,15_1', 0),
+(2, 0, '电视剧', 'tv', 2, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_2,156zy_2,33uuck_2,zuikzy_2,zuikyun_2,zuikck_2,8_2,10_2,11_2,12_2,13_2,15_2', 0),
+(3, 0, '综艺', 'zy', 3, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '156zy_3,33uuck_3,zuikzy_3,zuikzy_19,zuikzy_22,zuikyun_3,zuikyun_19,zuikyun_22,zuikck_3,zuikck_19,zuikck_22,8_3,8_30,8_27,8_32,8_31,9_30,10_3,11_3,12_3,7_3,7_30,7_33,7_32,7_31,13_3,15_3,15_26,15_24,15_23', 0),
+(4, 0, '动漫', 'dm', 4, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_4,156zy_4,33uuck_4,zuikzy_4,zuikyun_4,zuikck_4,8_4,8_20,8_36,8_37,8_35,8_34,8_33,9_31,9_39,10_4,11_4,12_4,7_4,7_20,7_37,7_36,7_35,7_34,7_27,9_16,13_4,15_4,15_27,15_31,15_30,15_29,15_28', 0),
+(5, 1, '动作片', 'dongzuo', 5, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_5,156zy_5,33uuck_5,zuikzy_5,zuikyun_5,zuikck_5,8_5,9_32,10_5,11_5,12_5,7_5,13_5,15_5', 0),
+(6, 1, '爱情片', 'aiqing', 6, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_7,33uuyun_16,156zy_7,33uuck_7,zuikzy_7,zuikyun_7,zuikck_7,8_7,9_34,10_7,11_7,12_7,7_7,9_7,13_7,15_7', 0),
+(7, 1, '科幻片', 'kehuan', 7, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_8,33uuyun_26,156zy_8,156zy_26,33uuck_8,33uuck_26,zuikzy_8,zuikzy_24,zuikyun_8,zuikyun_24,zuikck_8,zuikck_24,8_8,9_35,10_8,10_26,11_8,11_15,11_26,12_8,12_26,7_8,9_8,13_24,13_8,15_8', 0),
+(8, 1, '恐怖片', 'kongbu', 8, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_9,33uuyun_10,156zy_9,33uuck_9,zuikzy_9,zuikyun_9,zuikck_9,8_9,9_36,10_9,11_9,12_9,7_9,9_9,13_9,15_9', 0),
+(9, 1, '战争片', 'zhanzheng', 9, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_11,156zy_11,33uuck_11,zuikzy_11,zuikyun_11,zuikck_11,8_11,9_38,10_11,11_11,12_11,7_11,9_11,13_11,15_11', 0),
+(10, 1, '喜剧片', 'xiju', 10, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_6,156zy_6,33uuck_6,zuikzy_6,zuikyun_6,zuikck_6,8_6,9_33,10_6,11_6,12_6,7_6,13_6,15_6', 0),
+(11, 1, '纪录片', 'jilu', 11, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_25,156zy_25,33uuck_25,zuikzy_23,zuikyun_23,zuikck_23,8_22,9_42,10_25,11_25,12_25,7_22,9_18,13_23,15_19', 0),
+(12, 1, '剧情片', 'juqing', 12, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '156zy_10,156zy_16,33uuck_10,33uuck_16,zuikzy_10,zuikzy_16,zuikyun_10,zuikyun_16,zuikck_10,zuikck_16,8_10,8_29,8_21,8_26,9_37,9_40,9_41,10_10,10_16,11_10,11_16,12_10,12_16,7_2,7_29,7_26,7_10,7_21,9_10,9_17,9_22,13_10,13_16,13_19,13_22,14_2,14_3,14_4,14_5,14_6,14_7,14_8,14_9,14_10,14_11,14_12,14_13,14_14,14_15,14_16,14_17,14_18,14_19,14_23,14_22,14_21,14_24,14_26,14_25,14_20,15_20,15_10,15_22,15_21', 0),
+(13, 2, '大陆剧', 'dalu', 13, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_12,156zy_12,33uuck_12,zuikzy_12,zuikyun_12,zuikck_12,8_12,9_1,10_12,11_12,11_21,12_12,7_12,9_12,13_12,15_12', 0),
+(14, 2, '港台剧', 'tangtai', 14, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_13,33uuyun_13,33uuyun_21,156zy_13,156zy_21,33uuck_13,33uuck_21,zuikzy_13,zuikzy_18,zuikyun_13,zuikyun_18,zuikck_13,zuikck_18,8_28,8_16,8_13,9_2,9_3,10_13,10_21,11_13,12_13,12_21,7_13,7_28,7_16,9_13,9_14,13_13,13_18,15_13,15_16', 0),
+(15, 2, '欧美剧', 'oumei', 15, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_15,156zy_15,33uuck_15,zuikzy_15,zuikyun_15,8_23,8_15,9_6,9_29,10_15,12_15,7_23,7_15,9_20,9_21,13_15,13_14,15_18,15_15', 0),
+(16, 2, '日韩剧', 'rihan', 16, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_14,33uuyun_20,156zy_14,156zy_20,33uuck_14,33uuck_20,zuikzy_14,zuikzy_17,zuikyun_14,zuikyun_17,zuikck_14,zuikck_15,zuikck_17,8_14,8_17,9_4,9_5,8_19,10_20,10_14,10_22,10_23,11_22,11_23,11_20,11_14,12_23,12_22,12_20,12_14,7_19,7_17,7_14,9_19,9_15,zuikzy_20,zuikyun_20,zuikck_20,13_20,13_17,14_1,15_25,15_17,15_14', 0),
 (17, 0, '国内', 'guonei', 17, 'newspage.html', 'news.html', 'play.html', '', '', '', 0, '', 1),
 (18, 0, '国际', 'guoji', 18, 'newspage.html', 'news.html', 'play.html', '', '', '', 0, '', 1),
 (19, 0, '社会', 'shehui', 19, 'newspage.html', 'news.html', 'play.html', '', '', '', 0, '', 1),
@@ -827,6 +827,9 @@ INSERT INTO `sea_zyk` (`zid`, `zname`, `zapi`, `zinfo`) VALUES
 (10, '33uu综合资源', 'http://cj.1156zy.com/inc/seacmsapi.php', '<a target=\"_blank\" href=\"http://www.209zy.com/help/#SeaCms\"><font color=\"red\">【采集帮助/播放器集成】</font></a>'),
 (11, '33uu资源', 'http://cj.1156zy.com/inc/sea33uu.php', '<a target=\"_blank\" href=\"http://www.209zy.com/help/#SeaCms\"><font color=\"red\">【采集帮助/播放器集成】</font></a>'),
 (12, '33uuck资源', 'http://cj.1156zy.com/inc/sea33uuck.php', '<a target=\"_blank\" href=\"http://www.209zy.com/help/#SeaCms\"><font color=\"red\">【采集帮助/播放器集成】</font></a>'),
+(13, '最快M3U8资源', 'http://cj.1886zy.net/inc/seazkm3u8.php', '<a target=\"_blank\" href=\"http://www.1886zy.com/help/#SeaCms\"><font color=\"red\">【采集帮助/播放器集成】</font></a>'),
+(14, '小黄瓜', 'http://cj.xhgcjym.com/inc/ldg_sea.php', '<a target=\"_blank\" href=\"http://cj.xhgcjym.com/help/abc.html\"><font color=\"red\">【采集帮助/播放器集成】</font></a>'),
+(15, '卧龙m3u8地址', 'http://cj.wlzy.tv/inc/s_api_hy_m3u8.php', '<a target=\"_blank\" href=\"https://wolongzy.net/help/#SeaCms\"><font color=\"red\">【采集帮助/播放器集成】</font></a>');
 
 --
 -- 转储表的索引
