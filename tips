@@ -3,4 +3,5 @@ SELECT * FROM `sea_playdata` WHERE `v_id` = any(SELECT v_id  FROM `sea_playdata`
 SELECT * FROM `sea_playdata` WHERE `v_id` = any(SELECT v_id  FROM `sea_playdata` WHERE `body` LIKE '%$xhgzy%')
 UPDATE `sea_playdata` SET body = REPLACE(body, '$$', 'Dplayer播放$$') WHERE `body` REGEXP '^\\$\\$
 SELECT * FROM `sea_playdata` WHERE `v_id` = any(SELECT v_id FROM `sea_data` WHERE `v_pic` REGEXP '^$')
-SELECT * FROM `sea_playdata` WHERE `v_id` = any(SELECT v_id  FROM `sea_data` WHERE `v_pic` REGEXP '#err$')
+SELECT * FROM `sea_playdata` WHERE `v_id` = any(SELECT v_id FROM `sea_data` WHERE `v_pic` REGEXP '#err$')
+SELECT * FROM `sea_content` WHERE v_id NOT IN (SELECT v_id FROM `sea_data` WHERE 1)
