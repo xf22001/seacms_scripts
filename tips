@@ -1,4 +1,6 @@
 UPDATE `sea_data` SET `v_recycled`=1 WHERE `v_id` BETWEEN 1 AND 298
-SELECT * FROM `sea_data` WHERE `v_id` = any(SELECT v_id  FROM `sea_playdata` WHERE `body` LIKE '%Dplayer播放%')
-SELECT * FROM `sea_data` WHERE `v_id` = any(SELECT v_id  FROM `sea_playdata` WHERE `body` LIKE '%$xhgzy%')
+SELECT * FROM `sea_playdata` WHERE `v_id` = any(SELECT v_id  FROM `sea_playdata` WHERE `body` LIKE '%Dplayer播放%')
+SELECT * FROM `sea_playdata` WHERE `v_id` = any(SELECT v_id  FROM `sea_playdata` WHERE `body` LIKE '%$xhgzy%')
 UPDATE `sea_playdata` SET body = REPLACE(body, '$$', 'Dplayer播放$$') WHERE `body` REGEXP '^\\$\\$
+SELECT * FROM `sea_playdata` WHERE `v_id` = any(SELECT v_id FROM `sea_data` WHERE `v_pic` REGEXP '^$')
+SELECT * FROM `sea_playdata` WHERE `v_id` = any(SELECT v_id  FROM `sea_data` WHERE `v_pic` REGEXP '#err$')
