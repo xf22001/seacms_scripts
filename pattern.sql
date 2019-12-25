@@ -785,8 +785,8 @@ INSERT INTO `sea_type` (`tid`, `upid`, `tname`, `tenname`, `torder`, `templist`,
 (8, 1, '恐怖片', 'kongbu', 8, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_9,33uuyun_10,156zy_9,33uuck_9,zuikzy_9,zuikyun_9,zuikck_9,8_9,9_36,10_9,11_9,12_9,7_9,9_9,13_9,15_9', 0),
 (9, 1, '战争片', 'zhanzheng', 9, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_11,156zy_11,33uuck_11,zuikzy_11,zuikyun_11,zuikck_11,8_11,9_38,10_11,11_11,12_11,7_11,9_11,13_11,15_11', 0),
 (10, 1, '喜剧片', 'xiju', 10, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_6,156zy_6,33uuck_6,zuikzy_6,zuikyun_6,zuikck_6,8_6,9_33,10_6,11_6,12_6,7_6,13_6,15_6', 0),
-(11, 1, '纪录片', 'jilu', 11, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_25,156zy_25,33uuck_25,zuikzy_23,zuikyun_23,zuikck_23,8_22,9_42,10_25,11_25,12_25,7_22,9_18,13_23,15_19', 0),
-(12, 1, '剧情片', 'juqing', 12, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '156zy_10,156zy_16,33uuck_10,33uuck_16,zuikzy_10,zuikzy_16,zuikyun_10,zuikyun_16,zuikck_10,zuikck_16,8_10,8_29,8_21,8_26,9_37,9_40,9_41,10_10,10_16,11_10,11_16,12_10,12_16,7_2,7_29,7_26,7_10,7_21,9_10,9_17,9_22,13_10,13_16,13_19,13_22,14_2,14_3,14_4,14_5,14_6,14_7,14_8,14_9,14_10,14_11,14_12,14_13,14_14,14_15,14_16,14_17,14_18,14_19,14_23,14_22,14_21,14_24,14_26,14_25,14_20,15_20,15_10,15_22,15_21', 0),
+(11, 1, '纪录片', 'jilu', 11, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_25,156zy_25,33uuck_25,zuikzy_23,zuikyun_23,zuikck_23,8_22,9_42,10_25,11_25,12_25,7_22,9_18,13_23,15_19,16_9,16_18', 0),
+(12, 1, '剧情片', 'juqing', 12, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '156zy_10,156zy_16,33uuck_10,33uuck_16,zuikzy_10,zuikzy_16,zuikyun_10,zuikyun_16,zuikck_10,zuikck_16,8_10,8_29,8_21,8_26,9_37,9_40,9_41,10_10,10_16,11_10,11_16,12_10,12_16,7_2,7_29,7_26,7_10,7_21,9_10,9_17,9_22,13_10,13_16,13_19,13_22,14_2,14_3,14_4,14_5,14_6,14_7,14_8,14_9,14_10,14_11,14_12,14_13,14_14,14_15,14_16,14_17,14_18,14_19,14_23,14_22,14_21,14_24,14_26,14_25,14_20,15_20,15_10,15_22,15_21,16_1,16_2,16_3,16_4,16_5,16_6,16_7,16_8,16_10,16_16,16_17,16_19,16_20,16_21', 0),
 (13, 2, '大陆剧', 'dalu', 13, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_12,156zy_12,33uuck_12,zuikzy_12,zuikyun_12,zuikck_12,8_12,9_1,10_12,11_12,11_21,12_12,7_12,9_12,13_12,15_12', 0),
 (14, 2, '港台剧', 'tangtai', 14, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_13,33uuyun_13,33uuyun_21,156zy_13,156zy_21,33uuck_13,33uuck_21,zuikzy_13,zuikzy_18,zuikyun_13,zuikyun_18,zuikck_13,zuikck_18,8_28,8_16,8_13,9_2,9_3,10_13,10_21,11_13,12_13,12_21,7_13,7_28,7_16,9_13,9_14,13_13,13_18,15_13,15_16', 0),
 (15, 2, '欧美剧', 'oumei', 15, 'channel.html', 'content.html', 'play.html', '', '', '', 0, '33uuyun_15,156zy_15,33uuck_15,zuikzy_15,zuikyun_15,8_23,8_15,9_6,9_29,10_15,12_15,7_23,7_15,9_20,9_21,13_15,13_14,15_18,15_15', 0),
@@ -829,7 +829,8 @@ INSERT INTO `sea_zyk` (`zid`, `zname`, `zapi`, `zinfo`) VALUES
 (12, '33uuck资源', 'http://cj.1156zy.com/inc/sea33uuck.php', '<a target=\"_blank\" href=\"http://www.209zy.com/help/#SeaCms\"><font color=\"red\">【采集帮助/播放器集成】</font></a>'),
 (13, '最快M3U8资源', 'http://cj.1886zy.net/inc/seazkm3u8.php', '<a target=\"_blank\" href=\"http://www.1886zy.com/help/#SeaCms\"><font color=\"red\">【采集帮助/播放器集成】</font></a>'),
 (14, '小黄瓜', 'http://cj.xhgcjym.com/inc/ldg_sea.php', '<a target=\"_blank\" href=\"http://cj.xhgcjym.com/help/abc.html\"><font color=\"red\">【采集帮助/播放器集成】</font></a>'),
-(15, '卧龙m3u8地址', 'http://cj.wlzy.tv/inc/s_api_hy_m3u8.php', '<a target=\"_blank\" href=\"https://wolongzy.net/help/#SeaCms\"><font color=\"red\">【采集帮助/播放器集成】</font></a>');
+(15, '卧龙m3u8地址', 'http://cj.wlzy.tv/inc/s_api_hy_m3u8.php', '<a target=\"_blank\" href=\"https://wolongzy.net/help/#SeaCms\"><font color=\"red\">【采集帮助/播放器集成】</font></a>'),
+(16, '玉米视频资源网', 'http://api.cj644.com/inc/seacmsapi.php', '<a target=\"_blank\" href=\"http://www.800wu.com/?id=15\"><font color=\"red\">【采集帮助/播放器集成】</font></a>');
 
 --
 -- 转储表的索引
