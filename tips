@@ -14,3 +14,5 @@ DELETE FROM `sea_content` WHERE v_id in (SELECT v_id FROM `to_delete_all` WHERE 
 DELETE FROM `sea_playdata` WHERE v_id in (SELECT v_id FROM `to_delete_all` WHERE 1);
 DELETE FROM `sea_data` WHERE v_id in (SELECT v_id FROM `to_delete_all` WHERE 1);
 DROP TABLE `to_delete_all`;
+
+SELECT * FROM `sea_data` WHERE v_id IN (SELECT v_id  FROM `sea_playdata` WHERE `body` REGEXP 'ckplayer$') ORDER BY `v_id` ASC
