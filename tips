@@ -5,3 +5,12 @@ UPDATE `sea_playdata` SET body = REPLACE(body, '$$', 'Dplayer播放$$') WHERE `b
 SELECT * FROM `sea_playdata` WHERE `v_id` = any(SELECT v_id FROM `sea_data` WHERE `v_pic` REGEXP '^$')
 SELECT * FROM `sea_playdata` WHERE `v_id` = any(SELECT v_id FROM `sea_data` WHERE `v_pic` REGEXP '#err$')
 SELECT * FROM `sea_content` WHERE v_id NOT IN (SELECT v_id FROM `sea_data` WHERE 1)
+
+
+#去重
+create table to_delete_all (`v_id` mediumint(8) UNSIGNED NOT NULL DEFAULT '0', `v_name` char(60) NOT NULL DEFAULT '');
+insert into to_delete_all(`v_id`, `v_name`) (SELECT v_id, v_name FROM `sea_data` WHERE v_id NOT IN (SELECT MAX(v_id) FROM `sea_data` GROUP BY `v_name` HAVING COUNT(v_name) > 1) and v_name in (SELECT v_name FROM `sea_data` GROUP BY `v_name` HAVING COUNT(v_name) > 1));
+DELETE FROM `sea_content` WHERE v_id in (SELECT v_id FROM `to_delete_all` WHERE 1);
+DELETE FROM `sea_playdata` WHERE v_id in (SELECT v_id FROM `to_delete_all` WHERE 1);
+DELETE FROM `sea_data` WHERE v_id in (SELECT v_id FROM `to_delete_all` WHERE 1);
+DROP TABLE `to_delete_all`;
