@@ -22,6 +22,8 @@ SET time_zone = "+00:00";
 -- 数据库： `seacms`
 --
 
+DROP TABLE IF EXISTS `sea_admin`, `sea_arcrank`, `sea_buy`, `sea_cck`, `sea_comment`, `sea_content`, `sea_count`, `sea_co_cls`, `sea_co_config`, `sea_co_data`, `sea_co_filters`, `sea_co_news`, `sea_co_type`, `sea_co_url`, `sea_crons`, `sea_data`, `sea_erradd`, `sea_favorite`, `sea_flink`, `sea_guestbook`, `sea_ie`, `sea_jqtype`, `sea_member`, `sea_member_group`, `sea_myad`, `sea_mytag`, `sea_news`, `sea_playdata`, `sea_search_keywords`, `sea_tags`, `sea_temp`, `sea_topic`, `sea_type`, `sea_zyk`;
+
 -- --------------------------------------------------------
 
 --

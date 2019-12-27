@@ -16,3 +16,12 @@ DELETE FROM `sea_data` WHERE v_id in (SELECT v_id FROM `to_delete_all` WHERE 1);
 DROP TABLE `to_delete_all`;
 
 SELECT * FROM `sea_data` WHERE v_id IN (SELECT v_id  FROM `sea_playdata` WHERE `body` REGEXP 'ckplayer$') ORDER BY `v_id` ASC
+
+create table to_update_all (`v_id` mediumint(8) UNSIGNED NOT NULL DEFAULT '0', `v_name` char(60) NOT NULL DEFAULT '');
+insert into to_update_all(`v_id`, `v_name`) (SELECT v_id, v_name FROM `sea_data` WHERE `v_id` > 0)
+UPDATE `sea_data` SET `v_hit` = '0', `v_dayhit` = '0', `v_weekhit` = '0', `v_monthhit` = '0' WHERE `v_id` in (SELECT v_id FROM `to_update_all` WHERE 1)
+DROP TABLE `to_update_all`;
+
+create table to_delete_all (`v_id` mediumint(8) UNSIGNED NOT NULL DEFAULT '0', `v_name` char(60) NOT NULL DEFAULT '');
+insert into to_delete_all(`v_id`, `v_name`) (SELECT v_id, v_name FROM `sea_data` WHERE `v_pic` REGEXP '^[^h]')
+DROP TABLE `to_delete_all`;
