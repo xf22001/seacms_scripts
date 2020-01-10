@@ -6,7 +6,7 @@
 #   文件名称：gen_playlist_db.py
 #   创 建 者：肖飞
 #   创建日期：2019年12月12日 星期四 11时38分14秒
-#   修改日期：2019年12月20日 星期五 16时49分14秒
+#   修改日期：2020年01月09日 星期四 14时55分05秒
 #   描    述：
 #
 #================================================================
@@ -93,7 +93,7 @@ def parse_filelist(filelist):
         ts, file_path = m.groups()
         file_path = file_path.replace("'", "\\'")
         #print(file_path)
-        file_pic = '%s%s%s' %('/thumbnails', file_path, '.jpg')
+        #file_pic = '%s%s%s' %('/thumbnails', file_path, '.jpg')
         #print(file_pic)
         file_gif = '%s%s%s' %('/gifs', file_path, '.gif')
         #print(file_gif)
@@ -104,7 +104,7 @@ def parse_filelist(filelist):
 
         sea_data_item = sea_data_sample.replace('pattern_name', file_name)
         sea_data_item = sea_data_item.replace('pattern_gif', file_gif)
-        sea_data_item = sea_data_item.replace('pattern_pic', file_pic)
+        sea_data_item = sea_data_item.replace('pattern_pic', file_gif)
         sea_data_item = sea_data_item.replace('pattern_pinyin', file_pinyin)
         sea_data_item = sea_data_item.replace('pattern_index', str(item_index))
         sea_data_item = sea_data_item.replace('pattern_ts', ts)
