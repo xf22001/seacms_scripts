@@ -111,7 +111,7 @@ function process_list() {
 			echo "exist /media/pi/disk/NSFW/other/videos/$line"
 			continue
 		fi
-		echo mv "$line" "/media/pi/disk/NSFW/other/videos/"
+		mv "$line" "/media/pi/disk/NSFW/other/videos/"
 	done
 }
 
