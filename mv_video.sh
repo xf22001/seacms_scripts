@@ -108,8 +108,8 @@ function du_list() {
 function process_list() {
 	cat l | while read line;do
 		if [ -d "/media/pi/disk/NSFW/other/videos/$line" ]; then
-			echo -ne "exist /media/pi/disk/NSFW/other/videos/$line\nrename to /media/pi/disk/NSFW/other/videos/"$line"_$(date "+%Y%m%d%H%M%S")\n"
-			mv "$line" "/media/pi/disk/NSFW/other/videos/"$line"_$(date "+%Y%m%d%H%M%S")"
+			echo -ne "exist /media/pi/disk/NSFW/other/videos/$line\nrename to /media/pi/disk/NSFW/other/videos/$line-$(date "+%Y%m%d%H%M%S")\n"
+			mv "$line" "/media/pi/disk/NSFW/other/videos/$line-$(date "+%Y%m%d%H%M%S")"
 		else
 			mv "$line" "/media/pi/disk/NSFW/other/videos/"
 		fi
