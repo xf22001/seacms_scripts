@@ -6,7 +6,7 @@
 #   文件名称：gen_playlist_db.py
 #   创 建 者：肖飞
 #   创建日期：2019年12月12日 星期四 11时38分14秒
-#   修改日期：2020年02月25日 星期二 13时27分58秒
+#   修改日期：2020年02月25日 星期二 13时34分16秒
 #   描    述：
 #
 #================================================================
@@ -77,7 +77,7 @@ def test():
     print('%s' %(content))
 
 def parse_filelist(filelist):
-    video_tid = 1
+    video_tid = 2
     sea_data_sample = "(pattern_index, %d, 'pattern_name', 0, 'pattern_gif', 'pattern_pic', 'pattern_pic', 0, 0, 0, 0, 0, 0, 0, 0, '内详', '', 'pattern_ts_year', '', pattern_ts, 0, '', '', '_', 0, 0, '内详', 'pattern_pinyin', '', 0, 0, '%s', '', '', '', 0, 0, 0, '', '', 0, 0, 0, pattern_ts, pattern_ts, pattern_ts, '', '', '', '', '')" %(video_tid, video_tid)
     sea_playdata_sample = "(pattern_index, %d, 'Dplayer播放$$第1集$pattern_path$dp', '')" %(video_tid)
     sea_content_sample = "(pattern_index, %d, '')" %(video_tid)
