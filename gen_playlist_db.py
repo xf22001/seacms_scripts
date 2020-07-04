@@ -6,7 +6,7 @@
 #   文件名称：gen_playlist_db.py
 #   创 建 者：肖飞
 #   创建日期：2019年12月12日 星期四 11时38分14秒
-#   修改日期：2020年02月25日 星期二 13时34分16秒
+#   修改日期：2020年04月25日 星期六 23时01分33秒
 #   描    述：
 #
 #================================================================
@@ -40,16 +40,16 @@ class pinyin(object):
     def convert_ch(self, ch):
         ret = None
 
-        if isinstance(ch, unicode):
+        if isinstance(ch, str):
             ch = ch.encode('utf-8')
 
-        b = buffer(ch)
-        if len(b) == 1:
+        if len(ch) == 1:
             ret = ch.decode('utf-8')
             ret = re.sub('[ ]', '', ret)
             ret = re.sub('[-]', '_', ret)
             return ret
 
+        ch = ch.decode()
         for i in self.database:
             if ch in i:
                 ret = i.replace(ch, '')
@@ -63,7 +63,7 @@ class pinyin(object):
     
     def convert_content(self, content):
         ret = ''
-        if not isinstance(content, unicode):
+        if not isinstance(content, str):
             content = content.decode('utf-8')
         for i in content:
             ch = self.convert_ch(i)
@@ -100,7 +100,7 @@ def parse_filelist(filelist):
         #print(file_gif)
         file_name = os.path.splitext(os.path.basename(file_path))[0]
         #print(file_name)
-        file_pinyin = py.convert_content(file_name).encode('utf-8')
+        file_pinyin = py.convert_content(file_name)
         #print(file_pinyin)
 
         sea_data_item = sea_data_sample.replace('pattern_name', file_name)
@@ -163,8 +163,8 @@ def main(argv):
     options = optparse.OptionParser()
     options.add_option('-f', '--file', dest='filelist', help='filelist', default=None)
     opts, args = options.parse_args(argv)
-    print('opts:%s' %(str(opts).decode('string_escape')))
-    print('args:%s' %(str(args).decode('string_escape')))
+    print('opts:%s' %(opts))
+    print('args:%s' %(args))
     if len(args):
         options.print_help()
         return
